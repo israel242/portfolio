@@ -10,7 +10,7 @@
     color: whitesmoke;
     height: auto;
     text-align: center;
-    background-image: url('./Photos/range1.jpg');
+    background-image: url('./range1.jpg');
     background-size: 100%;
     background-position: center ;
     text-transform: uppercase;
@@ -159,4 +159,5 @@ font-display: block;
 
 footer{
     height:40vh;
+
 }
