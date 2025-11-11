@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* begin utility classes */
+.norap{
+    white-space:nowrap;
+    color: whitesmoke;
+    height: auto;
+    text-align: center;
+    background-image: url('./Photos/range1.jpg');
+    background-size: 100%;
+    background-position: center ;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    color: hsla(0, 0%, 0%, 0);
+}
+.logo{
+    margin: 10px;
+}
+
+header,main, nav,footer{
+    display: grid;
+}
+
+nav{
+    position: sticky;
+}
+
+nav{
+    top: 0;
+}
+
+footer{
+    position: relative;
+    background-color: blueviolet;
+    bottom: 0;
+}
+
+main{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    gap: min(4vh,15px);
+    background-image: radial-gradient(white,hsl(144, 56%, 32%));
+}
+
+main section{
+    flex-grow: 1;
+    background-image:radial-gradient(white ,hsl(0, 0%, 50%)) ;
+    padding: 8PX;
+}
+
+main aside{
+    background-color: grey;
+    color: aliceblue;
+}
+
+h4{
+    font-weight: 200%;
+    color:blueviolet;
+    font-style: italic;
+    text-decoration:underline;
+    padding: 0 0 5px;
+}
+ 
+.content{
+    margin:5px;
+}
+
+@media screen and (min-width:576px){
+    main{
+        flex-flow:row nowrap;
+        justify-content: space-between;
+    }
+
+    main section{
+        width:calc(70% - 5px);
+    }
+
+    main aside{
+    width: calc(30% - 5px);
+    }
+ } 
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    text-align: right;
+    margin:0;
+    background-image: linear-gradient(rgba(128, 128, 128, 0.5),hsla(0, 0%, 0%, 0.806));
+    height: 12vh; 
+    align-items: center;
+
+    
+}
+
+li{
+    display: inline-block;
+    padding: 4px
+}
+
+li a{
+   
+    color:hsla(300, 100%, 25%, 0.429);
+    text-decoration: none;
+    font-size: 20px;
+    background-color:hsla(120, 98%, 64%, 0.968);
+    padding:2px;
+    border-radius: 10px;
+}
+
+li a:hover,a:focus{
+text-decoration:underline;
+color: blue;
+
+}
+
+img{
+font-display: block;
+}
+
+.profile-pic-figure img{
+ width:40%;
+ min-height: 30vh;
+ min-width: 30vh;
+ height: auto;
+ margin:10px;
+ padding: 5px;
+ border-radius: 50%;
+}
+
+.Ranger{
+    gap: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+    
+}
+.container{
+    background-image: url(./photos/2.jpg);
+    background-size:cover;
+    background-position: center;
+    height: auto;
+    width:100%;
+}
+
+.h1{
+    font-weight: 400%;
+    font-size: 50px;
+    color: bisque;
+    
+}
+
+footer{
+    height:40vh;
+}
